@@ -47,7 +47,7 @@
 			</c:otherwise>
 		</c:choose>	
 
-		<li><a href="">메뉴</a></li>
+		<li><a href="../menu/menu.jsp">메뉴</a></li>
 		<li><a href="">고객센터</a></li></ul>
 		</nav>
 	</header>
