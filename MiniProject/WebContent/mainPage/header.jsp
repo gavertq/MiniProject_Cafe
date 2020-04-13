@@ -17,7 +17,7 @@
 		.header_hr{width: 100%; max-width: 1200px;}
 		.heaer_nav {float: right;}
 		.header_ul{list-style: none;}
-		.header_ul li{float: left; margin: 10px 15px 0px 10px;}
+		.header_ul li{float: left; margin: 10px 15px 0px 5px;}
 		#li{margin-left: 35%;}
 		.header_ul a{text-decoration: none; color: black;}
 		
@@ -35,7 +35,7 @@
 
 <div id="wrap_header">
 	<header>
-		<img alt="brand_logo" src="../resources/images/test3.jpg" class="logo">
+		<img alt="brand_logo" src="../resources/images/test4.jpg" class="logo">
 		<nav class="header_nav"><ul class="header_ul">
 		
 		<c:choose>		
