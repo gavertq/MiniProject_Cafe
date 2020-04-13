@@ -35,7 +35,7 @@
 
 <div id="wrap_header">
 	<header>
-		<img alt="brand_logo" src="../resources/images/test4.jpg" class="logo">
+		<img alt="brand_logo" src="../resources/images/test4.jpg" class="logo" onclick="location.href='/MiniProject_Cafe/mainPage/main.jsp'">
 		<nav class="header_nav"><ul class="header_ul">
 		
 		<c:choose>		
