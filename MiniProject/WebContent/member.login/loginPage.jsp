@@ -53,13 +53,15 @@
 <body>
 	<%@ include file="../mainPage/header.jsp" %>
 	<a id="first"></a>
-	<div id="wrap_main">
+	<div id="wrap_main" style="margin-top: 5%; margin-bottom: 5%;">
 		<div align="center">
-			<hr color="cyan" width="400">
-		<h2> 로그인</h2>
- 		<hr color="cyan" width="400">
  		<form name="checkjoin" action="../member.login/checkMember.jsp" method="post">
-	 	<table width="400">
+	 	<table width="400" CELLSPACING="15px">
+	 		<caption align="top">
+	 		<hr color="cyan" width="400">
+	 		<h2>로그인</h2>
+	 		<hr color="cyan" width="400" style="margin-bottom: 2%;">
+	 		</caption>
 	 		<tr>
 	 			<th>아이디</th>
 	 			<td><input type="text" name="userid" placeholder="아이디입력" maxlength="12" style="width: 150px;"></td>
@@ -70,7 +72,6 @@
 	 				<input type="password" name="userpw" placeholder="비밀번호 입력" style="width: 150px;">	
 	 			</td>
 	 		</tr>
-	 		<tr><td> <td></tr>
 	 		<tr>
 	 			<td colspan="2" align="center">
 	 				<input type="submit" value="로그인" style="margin-right: 10px;">
