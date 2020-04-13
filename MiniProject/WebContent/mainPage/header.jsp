@@ -43,7 +43,7 @@
 			<li id="li"><a id="" href="">로그아웃</a></li>
 			</c:when>
 			<c:otherwise>
-			<li id="li"><a id="" href="">로그인</a></li>
+			<li id="li"><a id="" href="../member.login/loginPage.jsp">로그인</a></li>
 			</c:otherwise>
 		</c:choose>	
 
