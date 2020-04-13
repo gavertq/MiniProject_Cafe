@@ -43,7 +43,12 @@
 <script type="text/javascript">
 
 	function goToRegister(){
-		location.href="../member.login/registerPage.jsp"	
+		var user_say = confirm('회원가입을 하시겠습니까?')
+		if(user_say) {
+			alert('회원가입 페이지로 이동합니다.')
+			location.href="../member.login/registerPage.jsp"
+		}
+		else location.href="#"
 	}
 
 </script>
