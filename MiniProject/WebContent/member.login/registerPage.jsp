@@ -41,7 +41,36 @@
 </style>
 <script src="../resources/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
-
+	function checktextId(){
+		if(document.userRegister.userid.value==""){
+			alert('실명은 필수 입력 사항입니다');
+			document.userRegister.userid.focus();
+			return;
+		}
+		//실명이 입력되면 중복확인하는 기능의 웹페이지 checkRegister열기
+		// wid = document.userRegister.userid.value;
+		// window.open("../member.login/checkRegister.jsp?userid="+wid,"","width=300,height=200")
+	}
+	function checktextPw(){
+		if(document.userRegister.userpw.value==""){
+			alert('비밀번호는 필수 입력 사항입니다');
+			document.userRegister.userpw.focus();
+			return;
+		}
+		if(document.userRegister.userpwc.value==""){
+			alert('비밀번호는 필수 입력 사항입니다');
+			document.userRegister.userpwc.focus();
+			return;
+		}
+		
+	}
+	function checktextNick(){
+		if(document.userRegister.usernick.value==""){
+			alert('닉네임은 필수 입력 사항입니다');
+			document.userRegister.usernick.focus();
+			return;
+		}
+	}
 </script>
 
 
@@ -52,7 +81,69 @@
 	<a id="first"></a>
 	<div id="wrap_main" style="margin-top: 5%; margin-bottom: 5%;">
 		<div align="center">
-			회원가입 페이지
+			<form name="userRegister" action="../member.login/checkRegister.jsp" method="post">
+	 		<table width="400" CELLSPACING="15px">
+	 		<caption align="top">
+	 		<hr color="cyan" width="400">
+	 		<h2>회원가입</h2>
+	 		<hr color="cyan" width="400" style="margin-bottom: 1%;">
+	 		</caption>
+	 		<tr>
+	 			<td>이름<sup><font color=red>(* 필수)</font>실명입력</sup></td>
+	 			<td><input type="text" id="username" name="username" placeholder="실명입력" maxlength="4" style="width: 150px;"></td>
+	 		</tr>
+	 		<tr>
+	 			<td>아이디<sup><font color=red>(* 필수)</font>중복허용x</sup></td>
+	 			<td>
+	 				<input type="text" id="userid" name="userid" placeholder="아이디 입력" style="width: 150px;">	
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td>비밀번호</td>
+	 			<td>
+	 				<input type="password" id="userpw" name="userpw" placeholder="비밀번호 입력" style="width: 150px;">	
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td>비밀번호 확인</td>
+	 			<td>
+	 				<input type="password" id="userpwc" name="userpwc" placeholder="비밀번호 입력" style="width: 150px;">	
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td>닉네임<sup><font color=red>(* 필수)</font>중복허용x</sup>	</td>
+	 			<td>
+	 				<input type="text" id="usernick" name="usernick" placeholder="비밀번호 입력" style="width: 150px;">	
+	 			</td>
+	 		</tr>
+	 		<tr>
+	 			<td colspan="2" align="center">
+	 				<input type="submit" value="회원가입" style="margin-right: 10px;">
+	 				<input type="reset" value="취소" style="margin-right: 10px;">
+	 				
+	 			</td>
+	 		</tr>
+	 	</table>
+	 	</form>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		</div>
 	</div>
 	
