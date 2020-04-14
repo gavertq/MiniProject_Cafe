@@ -8,7 +8,7 @@ public class MenuDTO {
 	private String menu_Info;
 	
 	//메뉴 영양정보
-	private int size;		//무게
+	private int menu_size;		//무게
 	private int kcal;		//칼로리
 	private int fat;		//포화지방
 	private int natrium;	//나트륨
@@ -24,8 +24,8 @@ public class MenuDTO {
 	public String getMenu_Info() {return menu_Info;	}
 	public void setMenu_Info(String menu_Info) {this.menu_Info = menu_Info;	}
 	
-	public int getSize() {return size;}
-	public void setSize(int size) {this.size = size;}
+	public int getMenu_size() {return menu_size;}
+	public void setMenu_size(int menu_size) {this.menu_size = menu_size;}
 	
 	public int getKcal() {return kcal;}
 	public void setKcal(int kcal) {this.kcal = kcal;}

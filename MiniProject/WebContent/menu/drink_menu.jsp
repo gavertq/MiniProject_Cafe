@@ -35,7 +35,7 @@
 	<fieldset>
 		<h3> 분 류 보 기</h3>
 			<hr>
-		<form action="select_menu.jsp?category=drink" method="post">
+		<form action="select_menu.jsp?category=drink" method="get">
 			<input type="radio" name="menu" value="*"><span>전체 보기</span><br>
 			<input type="radio" name="menu" value="coffee"><span>커피</span>
 			<input type="radio" name="menu" value="tea"><span>차</span>

@@ -35,11 +35,11 @@
 	<fieldset>
 	<h3> 분 류 보 기</h3>
 	<hr>
-	<form action="select_menu.jsp?category=dessert" method="post">
+	<form action="select_menu.jsp?category=dessert" method="get">
 		<input type="radio" name="menu" value="*"><span>전체 보기</span><br>
 		<input type="radio" name="menu" value="cake"><span>케이크</span>
 		<input type="radio" name="menu" value="sandwich"><span>샌드위치</span>
-		<input type="radio" name="menu" value="fruit"><span>과일</span><br><br>
+		<input type="radio" name="menu" value="bakery"><span>베이커리</span><br><br>
 		<input type="submit" value="검색" class="menu_submit">
 	</form>
 	</fieldset>
