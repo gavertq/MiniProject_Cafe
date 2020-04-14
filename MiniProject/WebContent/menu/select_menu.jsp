@@ -13,17 +13,19 @@
 	/*기본 CSS 및 모바일*/
 	#wrap_Cmenu{display: flex; flex-flow: column; margin: 0 auto;	width: 80%; max-width: 1200px;}		
 		.menu_category_ul {list-style: none; align-items: center; padding-left: 20%;}
-		.menu_category_li {float: left; text-align: center; margin: 20px 20px 20px 0px; overflow: hidden;}
+		.menu_category_li {float: left; margin: 0px 20px 0px 0px;}
+		.menu_category_dt {overflow: hidden;}		
 		.menu_category_li img{width: 220px; height: 220px; transform:scale(1);}
 		.menu_category_li:hover img{transform:scale(1.1);}
-		.menu_category_li span{font-weight: bold;}
+		.menu_category_dd {font-weight: bold; margin: 0 auto; text-align: center;}
 		
 	/*PC용 CSS*/
 	@media all and (min-width:960px){		
 	#wrap_Cmenu{position:relative; width:80%;}/*위에서 설정하고 아래서 따로 설정안하면 그 설정 유지. 새로 설정하면 새로 설정한값 적용*/
 	.menu_category_ul {padding-left: 10%;}
 	.menu_category_li img{width: 320px; height: 320px;}
-
+	.menu_category_dd {font-size: 1.5em;}
+	
 </style>
 
 </head>
@@ -46,9 +48,13 @@
 		<ul class="menu_category_ul">
 			<c:forEach var="result" items="${ result_category}">
 			<li class="menu_category_li">
+			<dl>
+				<dt class="menu_category_dt">
 				<img class="${result }" alt="${result }" src="../resources/menu/${ result}.jpg" 
 					onclick="location.href='menuDetail.jsp?name=${result}'">
-				<br><br><span>${result }</span>
+				</dt>
+				<dd class="menu_category_dd">${result }</dd>
+			</dl>			
 			<li>			
 			</c:forEach>			
 		</ul>
