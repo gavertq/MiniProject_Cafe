@@ -3,8 +3,10 @@ package members;
 public class MenuDTO {
 	//메뉴 이름
 	private String menu_name;
+	
 	//메뉴 정보
 	private String menu_Info;
+	
 	//메뉴 영양정보
 	private int size;		//무게
 	private int kcal;		//칼로리
@@ -12,6 +14,9 @@ public class MenuDTO {
 	private int natrium;	//나트륨
 	private int sugars;		//당류
 	private int protein;	//단백질
+	
+	//메뉴 이미지 경로
+	private String image;
 	
 	public String getMenu_name() {return menu_name;	}
 	public void setMenu_name(String menu_name) {this.menu_name = menu_name;	}
@@ -37,5 +42,7 @@ public class MenuDTO {
 	public int getProtein() {return protein;}
 	public void setProtein(int protein) {this.protein = protein;}
 	
+	public String getImage() {return image;}
+	public void setImage(String image) {this.image = image;}	
 
 }

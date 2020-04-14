@@ -11,12 +11,19 @@
 </head>
 <body>
 
-<jsp:useBean id="dao" class="members.MenuDAO"/>
+<jsp:useBean id="menuDao" class="members.MenuDAO"/>
 <c:set var="category" value="${ param.category}"/>
+<c:set var="detail" value="${ param.menu}"/>
 
 <c:choose>
 <c:when test="${category == drink }">
-	
+	<c:set var="drink_category" value="${ menuDao.menuView(category)}"/>
+	<table><tr>
+	<c:forEach var="result" items="${ drink_category}">
+	<td><img alt="${result.menu_name }" src="../resource/images/${ result.image}.jsp"><br>${result.menu_name } <td>
+	</c:forEach>
+	</tr>
+	</table>
 </c:when>
 
 <c:when test="${category == dessert }">
