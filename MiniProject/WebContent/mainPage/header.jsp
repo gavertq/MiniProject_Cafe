@@ -12,7 +12,7 @@
 
 <style type="text/css">
 	/*기본 CSS 및 모바일*/
-	#wrap_header{display: flex; flex-flow: column; margin: 0 auto;	width: 80%; max-width: 1200px; background-color: #EEE880;}
+	#wrap_header{display: flex; flex-flow: column; margin: 0 auto;	width: 80%; max-width: 1200px; background-color: #F6F5EF;}
 		.logo{float: left; width: 50px; height: 50px; margin-top: 5px; margin-left: 5px;}
 		.header_hr{width: 100%; max-width: 1200px;}
 		.heaer_nav {float: right;}
@@ -26,7 +26,7 @@
 	#wrap_header{position:relative; width:80%;}/*위에서 설정하고 아래서 따로 설정안하면 그 설정 유지. 새로 설정하면 새로 설정한값 적용*/
 		.logo{width: 100px; height: 100px; margin-top: 10px; margin-left: 10px;}
 		.header_ul li{margin: 50px 20px 0px 15px;}
-		#li{margin-left: 60%;}
+		#li{margin-left: 55%;}
 		
 </style>
 
@@ -35,7 +35,7 @@
 
 <div id="wrap_header">
 	<header>
-		<img alt="brand_logo" src="../resources/images/test4.jpg" class="logo">
+		<img alt="brand_logo" src="../resources/images/starbucks_logo.png" class="logo" onclick="location.href='/MiniProject/mainPage/main.jsp'">
 		<nav class="header_nav"><ul class="header_ul">
 		
 		<c:choose>		
@@ -43,11 +43,11 @@
 			<li id="li"><a id="" href="">로그아웃</a></li>
 			</c:when>
 			<c:otherwise>
-			<li id="li"><a id="" href="../member.login/loginPage.jsp">로그인</a></li>
+			<li id="li"><a id="" href="">로그인</a></li>
 			</c:otherwise>
 		</c:choose>	
 
-		<li><a href="">메뉴</a></li>
+		<li><a href="../menu/menu.jsp">메뉴</a></li>
 		<li><a href="">고객센터</a></li></ul>
 		</nav>
 	</header>
