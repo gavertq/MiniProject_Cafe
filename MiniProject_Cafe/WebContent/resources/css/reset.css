@@ -1,0 +1,70 @@
+@charset utf-8;
+
+/* CSS 초기화 */
+/*모든 태그를 기본값으로 초기화 한다.*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+margin:0;
+padding:0;
+border:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+/*body 태그에 폰트 속성과 배경 속성 그리고 글자 행간 속성을 설정 한다.*/
+body{
+font-family:NanumGothic,나눔고딕,'Nanum Gothic','맑은 고딕',HelveticaNeue,DroidSans,Sans-serif,Helvetica;
+background:url(../images/body_bg.png);
+line-height:1;
+}
+/*html5 태그들이 정상적으로 작동하도록 display속성의 값을 block로 설정한다.*/
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{ 
+display:block;
+}
+/* ul, li태그의 목록 스타일을 초기화 한다.*/
+nav ul, li{
+list-style:none;
+}
+/* a 태그를 기본값으로 초기화 한다.*/
+a{
+margin:0;
+padding:0;
+font-size:100%;
+text-decoration:none;
+vertical-align:baseline;
+color:#fff;
+background:transparent;
+}
+/* 이미지 태그의 간격을 없애기 위해 vertical-align 속성값을 top으로 설정한다.*/
+img{
+vertical-align:top;
+}
+/* table 태그의 간격을 없애기 위해 간격값을 기본값으로 설정한다.*/
+table{
+border-collapse:collapse;
+border-spacing:0;
+}
+/* input 태그를 기본값으로 초기화 한다.*/
+input{
+margin:0;
+padding:0;
+box-sizing:content-box;
+vertical-align:top;
+appearance:none;
+border:1px solid #e65d5d;
+color:#e65d5d;
+border-radius:0; 
+font-family:NanumGothic,나눔고딕,'Nanum Gothic','맑은 고딕',HelveticaNeue,DroidSans,Sans-serif,Helvetica;
+}
+
+input::-moz-input-placeholder{
+color:#e65d5d;
+}
+
+input::-webkit-input-placeholder {
+color:#e65d5d;
+}
+
+/* 웹폰트 CSS */
+@font-face{font-family:'Nanum Gothic'; src:url(../webfont/NanumGothic.eot)}
+@font-face{font-family:'Nanum Gothic'; src:url(../webfont/NanumGothic.woff)}
